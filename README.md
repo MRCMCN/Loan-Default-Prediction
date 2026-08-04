@@ -57,7 +57,7 @@ Test partition. The last column refits each model on every available input, incl
 
 **Protected attributes**
 
-`Gender` ranks third by permutation importance, and the logistic assigns it explicit weight (`Male` +0.254, `Female` +0.164, `Joint` −0.381). It is retained here because the aim is to model the data as given and to report what the data actually contains. A production scorecard could not use it: gender is a protected attribute under ECOA and Regulation B in the United States and under the EU anti-discrimination framework. Excluding it would be the first step, and testing the remaining inputs for proxy effects the second — neither is done here.
+`Gender` ranks third by permutation importance, and the logistic assigns it explicit weight (`Male` +0.254, `Female` +0.164, `Joint` −0.381). It is retained here because the aim is to model the data as given and to report what the data actually contains. A production scorecard could not use it.
 
 ## Conclusion
 
