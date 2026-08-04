@@ -8,7 +8,7 @@ Loan default prediction for credit risk management: a Logistic Regression benchm
 - **Models.** Logistic Regression as the interpretable benchmark, Histogram-based Gradient Boosting as the challenger. Both share the same preprocessing (median imputation for numerical inputs, most-frequent for categorical, one-hot encoding), with standardisation added for the logistic.
 - **Partitions.** Stratified 60% train / 30% validation / 10% test — 89,202 / 44,600 / 14,868 applications. The champion model and the operating cutoff are both selected on validation; the test set is used only for the final assessment.
 - **Metrics.** AUC, KS statistic and cumulative lift at 5/10/20% depth — the standard toolkit in credit scoring — alongside accuracy and F1.
-- **Leakage analysis.** Several inputs are missing almost exclusively for defaulted loans, or contain categories made entirely of defaults. These are identified, quantified, and removed before modelling.
+- **Leakage analysis.** Several inputs are missing almost exclusively for defaulted loans, or contain categories made entirely of defaults. These are identified, quantified, and the material ones removed before modelling.
 
 ## Data
 
